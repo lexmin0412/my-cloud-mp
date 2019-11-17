@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/cd/cd",
+    "pages/kkb/kkb",
+    "pages/logs/logs",
+    "pages/index/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "云开发",
+        "pagePath": "pages/cd/cd"
+      },
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "开课吧",
+        "pagePath": "pages/kkb/kkb"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "开课吧",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

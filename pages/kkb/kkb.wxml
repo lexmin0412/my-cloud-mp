@@ -1,0 +1,23 @@
+<view class="title">
+  <view wx:if="{{showTitle}}" id="item-{{name}}">
+  测试页面{{name}}
+  </view>
+  <button bindtap="toggleTitle" type="primary">点我</button>
+  <view wx:for="{{todos}}">
+    {{index}} -- {{item}}
+  </view>
+  <map></map>
+  <editor placeholder="富文本编辑器"></editor>
+  <camera style="width: 100%; height: 400px;" 
+  flash="on" 
+  device-position="{{cameraDirection}}"
+  />
+  <button bindtap="takePhoto">拍照</button>
+  <button bindtap="toggleDirection">切换前后摄像头</button>
+  <button bindtap="previewImage">预览图片</button>
+  <button bindtap="saveImage">保存图片</button>
+  <image src="{{src}}" mode="widthFix" />
+  <button bindtap="setTabBar">
+    setTabbar
+  </button>
+</view>

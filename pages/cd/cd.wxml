@@ -1,0 +1,12 @@
+<view class="title">
+  开课吧
+  <button bindtap="queryCloudData">
+  获取云端数据</button>
+  <button bindtap="addItem">  
+    添加记录
+  </button>
+  <view wx:for="{{books}}">
+    {{item.name}}
+  </view>
+
+</view>
