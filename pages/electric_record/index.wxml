@@ -1,0 +1,22 @@
+<view class="home-container">
+  <view class="title">
+    <view class="title-left">
+      Electric Degree Record
+    </view>
+    <!-- <view class="title-right">
+      <image bindtap="handleAdd" src="./../../assets/images/common/icon_add.png" />
+    </view> -->
+  </view>
+  <view wx:for="{{dataList}}">
+    <view class="item">
+      <view class="item-time">
+        {{item.time}}
+      </view>
+      <view class="item-degree">
+        {{item.degree}}
+      </view>
+    </view>
+  </view>
+  <input type="text" bindinput="inputChange" />
+  <button class="add-btn" type="primary" bindtap="handleAdd">添加记录</button>
+</view>
