@@ -1,0 +1,11 @@
+<view class="electric-record-container">
+  <view class="section">
+    <picker mode="date" value="{{time}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+      <view class="picker">请点击选择时间：{{time}}</view>
+    </picker>
+  </view>
+  <view class="section">
+    <input type="text" placeholder="请输入Electirc Degree" bindinput="degreeChange" />
+  </view>
+  <button type="primary" bindtap="handleSubmit">确认</button>
+</view>
