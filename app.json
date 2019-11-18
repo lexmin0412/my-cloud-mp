@@ -1,30 +1,39 @@
 {
   "pages": [
-    "pages/cd/cd",
-    "pages/kkb/kkb",
-    "pages/logs/logs",
-    "pages/index/index"
+    "pages/todo/index",
+    "pages/todo/add",
+    "pages/electric_record/index",
+    "pages/electric_record/add",
+    "pages/user/index"
   ],
   "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000",
     "list": [
       {
-        "text": "云开发",
-        "pagePath": "pages/cd/cd"
+        "text": "TODO",
+        "pagePath": "pages/todo/index",
+        "iconPath": "assets/images/common/icon_home.png",
+        "selectedIconPath": "assets/images/common/icon_home_active.png"
       },
       {
-        "text": "首页",
-        "pagePath": "pages/index/index"
+        "text": "Electric Record",
+        "pagePath": "pages/electric_record/index",
+        "iconPath": "assets/images/common/icon_home.png",
+        "selectedIconPath": "assets/images/common/icon_home_active.png"
       },
       {
-        "text": "开课吧",
-        "pagePath": "pages/kkb/kkb"
+        "text": "我的",
+        "pagePath": "pages/user/index",
+        "iconPath": "assets/images/common/icon_user.png",
+        "selectedIconPath": "assets/images/common/icon_user_active.png"
       }
     ]
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "开课吧",
+    "navigationBarTitleText": "My NoteBook",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
