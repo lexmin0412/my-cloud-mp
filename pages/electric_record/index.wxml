@@ -3,9 +3,6 @@
     <view class="title-left">
       Electric Degree Record
     </view>
-    <!-- <view class="title-right">
-      <image bindtap="handleAdd" src="./../../assets/images/common/icon_add.png" />
-    </view> -->
   </view>
   <view wx:for="{{dataList}}">
     <view class="item">
