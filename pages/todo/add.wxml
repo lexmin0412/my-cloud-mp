@@ -1,0 +1,15 @@
+<view class="add-page">
+  <view class="section">
+    <input type="text" placeholder="请输入标题" bindinput="titleInput" />
+  </view>
+  <view class="section">
+    <input type="text" placeholder="请输入描述" bindinput="descInput" />
+  </view>
+  <view class="section">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+      <view class="picker">请点击选择时间：{{date}}</view>
+    </picker>
+  </view>
+
+  <button class="submit-btn" type="primary" bindtap="handleSubmit">确认</button>
+</view>

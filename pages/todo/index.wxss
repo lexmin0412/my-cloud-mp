@@ -1,0 +1,50 @@
+
+.home-container {
+  min-height: 100vh;
+  padding: 0;
+  background-color: #eff0f5;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  font-weight: 700;
+  font-size: 20px;
+  color: #222;
+  background-color: #fff;
+}
+
+.title-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-right image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.item {
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.item .status {
+  margin-right: 12rpx;
+}
+
+.item-title {
+  flex: 1;
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
