@@ -35,11 +35,12 @@
 }
 
 .item-time {
-  width: 30vw;
+  min-width: 30vw;
 }
 
 .item-degree {
   flex: 1;
+  margin-left: 20rpx;
 }
 
 .add-btn {
@@ -47,4 +48,24 @@
   bottom: 40rpx;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.delete-btn {
+  font-size: 28rpx;
+  color: #ff4a4a;
+}
+
+.default-box {
+  padding: 60rpx 0;
+  text-align: center;
+}
+.default-box image {
+  width: 240rpx;
+  height: 160rpx;
+  margin: 0 auto;
+}
+.default-box .default-text {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #999;
 }

@@ -73,7 +73,7 @@ Page({
 
   degreeChange(e) {
     this.setData({
-      degree: e.detai.value
+      degree: e.detail.value
     })
   },
 
