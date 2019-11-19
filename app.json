@@ -2,6 +2,7 @@
   "pages": [
     "pages/todo/index",
     "pages/todo/add",
+    "pages/todo/detail",
     "pages/electric_record/index",
     "pages/electric_record/add",
     "pages/user/index"
