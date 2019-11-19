@@ -1,5 +1,8 @@
+import { setTitle } from './../../utils/setting'
+
 //index.js
 //获取应用实例
+
 const app = getApp()
 
 Page({
@@ -16,6 +19,7 @@ Page({
     })
   },
   onLoad: function () {
+    setTitle('我的')
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
