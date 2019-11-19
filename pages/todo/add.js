@@ -3,7 +3,8 @@ Page({
     title: '' ,
     desc: '',
     is_finished: false,
-    is_urgent: false
+    is_urgent: false,
+    date: ''
   },
   onLoad() {
     wx.cloud.init()
@@ -51,8 +52,8 @@ Page({
   handleSubmit() {
     let db = wx.cloud.database()
     console.log('this.data', this.data, db, db.collection('electric_charge'))
-    const { title, desc, is_finished, is_urgent } = this.data
-    if ( !title || !desc ) {
+    const { title, desc, is_finished, is_urgent, date } = this.data
+    if ( !title || !desc || !date ) {
       wx.showToast({
         title: '请先填入标题和描述',
         duration: 1200,
@@ -65,8 +66,9 @@ Page({
       data: {
         title,
         desc,
-        is_finished,
-        is_urgent
+        is_finished: [true, 'true'].includes(is_finished) ? true : false ,
+        is_urgent: [true, 'true'].includes(is_urgent) ? true : false ,
+        date
       },
     }).then(res=>{
       console.log('res',res)

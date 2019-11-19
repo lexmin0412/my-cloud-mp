@@ -48,3 +48,18 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.default-box {
+  padding: 60rpx 0;
+  text-align: center;
+}
+.default-box image {
+  width: 240rpx;
+  height: 160rpx;
+  margin: 0 auto;
+}
+.default-box .default-text {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #999;
+}

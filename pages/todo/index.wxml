@@ -1,22 +1,29 @@
 <view class="home-container">
   <view class="title">
-    <view class="title-left">
-      TodoList
-    </view>
+    <view class="title-left">TodoList</view>
     <!-- <view class="title-right">
       <image bindtap="handleAdd" src="./../../assets/images/common/icon_add.png" />
     </view> -->
   </view>
-  <view wx:for="{{dataList}}">
-    <view class="item">
-      <view class="status">
-        {{item.is_finished ? '✅' : '⭕️'}} 
-      </view>
-      <view class="item-title">
-        {{item.title}}
+  <block wx:if="{{dataList&&dataList.length>0}}">
+    <view wx:for="{{dataList}}">
+      <view class="item">
+        <view class="status" data-item="{{item}}" bindtap="itemCheck">
+          <!-- {{item.is_finished ? '✅' : '⭕️'}} -->
+          <checkbox-group>
+            <checkbox checked="{{item.is_finished?true:false}}" disabled="{{item.is_finished}}"></checkbox>
+          </checkbox-group>
+        </view>
+        <view class="item-title" bind:tap="jumpToDetail" data-item="{{item}}">{{item.title}}</view>
       </view>
     </view>
-  </view>
+  </block>
+  <block class="default-box" wx:else>
+    <view class="default-box">
+      <image src="./../../assets/images/common/icon_no_data.png" />
+      <view class="default-text">暂无相关数据，快去点击下方按钮添加吧</view>
+    </view>
+  </block>
   <input type="text" bindinput="inputChange" />
   <button class="add-btn" type="primary" bindtap="handleAdd">添加记录</button>
 </view>

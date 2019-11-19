@@ -1,0 +1,43 @@
+.detail-page {
+  min-height: 100vh;
+  background-color: #eff0f5;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+  background-color: #fff;
+}
+
+.section .input {
+  flex: 1;
+  margin-left: 20rpx;
+  padding: 10rpx 20rpx;
+  background-color: #eff0f5;
+}
+
+.action-btns {
+  position: fixed;
+  bottom: 120rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.action-btns .action-btn {
+  box-sizing: border-box;
+  width: 184px;
+  margin-top: 20rpx;
+  min-height: 40px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  text-align: center;
+  font-weight: 700;
+  background-color: #ff4a4a;
+  color: #fff;
+}
+.action-btns .save-btn {
+  background:#07c160;
+}

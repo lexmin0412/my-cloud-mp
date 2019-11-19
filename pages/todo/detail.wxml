@@ -1,0 +1,22 @@
+<view class="detail-page">
+  <view class="section">
+    <view class="text">标题</view>
+    <input type="text" class="input" value="{{title}}" bindinput="titleInput" />
+  </view>
+  <view class="section">
+    <view class="text">描述</view>
+    <input type="text" class="input" value="{{desc}}" bindinput="descInput" />
+  </view>
+  <view class="section">
+    <view class="text">时间</view>
+    <input type="text" class="input" value="{{date}}" disabled="{{true}}" />
+  </view>
+  <view class="section">
+    <view class="text">状态</view>
+    <input type="text" class="input" value="{{is_finished?'已完成':'未完成'}}" disabled="{{true}}"/>
+  </view>
+  <view class="action-btns">
+    <view class="delete-btn action-btn" bindtap="handleDelete">删除</view>
+    <view class="save-btn action-btn" bindtap="handleSave">保存</view>
+  </view>
+</view>
